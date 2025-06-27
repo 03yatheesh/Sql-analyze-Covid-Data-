@@ -14,20 +14,20 @@ This project is a structured SQL-based analysis of global COVID-19 data. It focu
 - Use SQL to transform and explore raw data into valuable metrics
 
 ### Datasets Used
-- **CovidDeaths**: Includes columns like location, date, total cases, new cases, total deaths, population, and more  
-- **CovidVaccinations**: Includes daily and cumulative vaccination data by location and date
+- CovidDeaths: Includes columns like location, date, total cases, new cases, total deaths, population, and more  
+- CovidVaccinations: Includes daily and cumulative vaccination data by location and date
 
 ### KPIs Collected
-- **Death Rate (%):** (Total Deaths / Total Cases) × 100  
-- **Infection Rate (%):** (Total Cases / Population) × 100  
-- **Vaccination Percentage:** (Total Vaccinations / Population) × 100  
-- **Daily New Cases and Deaths**  
-- **Cumulative Vaccination Over Time**
+- Death Rate (%): (Total Deaths / Total Cases) × 100  
+- Infection Rate (%): (Total Cases / Population) × 100  
+- Vaccination Percentage: (Total Vaccinations / Population) × 100  
+- Daily New Cases and Deaths
+- Cumulative Vaccination Over Time
 
 ### SQL Concepts Used
-- `SELECT`, `WHERE`, `ORDER BY` for filtering and sorting  
-- `TRY_CAST`, `NULLIF` for safe type conversion  
-- `SUM()`, `MAX()` for aggregation  
-- `JOIN` to merge death and vaccination data  
-- `OVER(PARTITION BY ...)` for windowed calculations  
-- `VIEW` creation for reusable summaries
+- SELECT, WHERE, ORDER BY for filtering and sorting  
+- TRY_CAST, NULLIF for safe type conversion  
+- SUM(), MAX() for aggregation  
+- JOIN to merge death and vaccination data  
+- OVER(PARTITION BY ...) for windowed calculations  
+- VIEW creation for reusable summaries
